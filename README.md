@@ -1,11 +1,11 @@
-# 👋  Hello! I'm [David][website] 👋 <img align="right" src="https://github.com/davidmimay"/>
+# 👋  Hello! I'm David.
 
-### Passionate Web Developer
+## Passionate Web Developer
 
 - 🔭 I’m currently working on Angular, Firebase, Material.
 - 🌱 I’m currently learning Angular, Solidity.
-- 💬 Ask me about Angular, Firebase, Material
-- 📫 How to reach me: [@davidmimay][github]
+- 💬 Ask me about Angular, Firebase, Material.
+- 📫 How to reach me https://github.com/davidmimay
 
 ---
 
@@ -34,16 +34,22 @@
 
 ### 📝 Latest Blog Posts
 
-- These are my latest posts on [Dev.to](https://dev.to/davidmimay):
+- Check out my latest posts on [Dev.to](https://dev.to/davidmimay).
 
 ---
 
+### 🔥 Stats
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=davidmimay)](https://github.com/davidmimay/github-readme-stats)
 [![David's github stats](https://github-readme-stats.vercel.app/api?username=davidmimay&theme=vue&show_icons=true&include_all_commits=true)](https://github.com/davidmimay/github-readme-stats)
 
-<br />
+---
+
+### 💖 Support
 
 If you like my content, please consider to sponsor ☕️
-[<code>sponsor </code>](https://github.com/sponsors/davidmimay)
+
+[<code>sponsor 💟</code>](https://github.com/sponsors/davidmimay)
 <br />
 <br />
 Thank you for your support! 
