@@ -1,0 +1,31 @@
+<h1>Languages & Tools</h1>
+  <p>What technologies I love to use?</p>
+
+  <input type="hidden" #selection>
+
+  <div class="card-container">
+    <button mat-button (click)="selection.value = 'firebase'" tabindex="0">
+      <mat-icon>local_fire_department</mat-icon><span>Firebase</span>
+    </button>
+
+    <button mat-button (click)="selection.value = 'angular'" tabindex="0">
+      <mat-icon>subtitles</mat-icon><span>Angular</span>
+    </button>
+
+    <button mat-button (click)="selection.value = 'material'" tabindex="0">
+      <mat-icon>style</mat-icon><span>Material</span>
+    </button>
+
+    <button mat-button (click)="selection.value = 'stripe'" tabindex="0">
+      <mat-icon>payment</mat-icon><span>Stripe</span>
+    </button>
+
+  </div>
+
+<div class="terminal" [ngSwitch]="selection.value">
+  <pre *ngSwitchDefault>ng generate component xyz</pre>
+  <pre *ngSwitchCase="'firebase'">firebase init</pre>
+  <pre *ngSwitchCase="'angular'">ng new project</pre>
+  <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
+  <pre *ngSwitchCase="'stripe'">npm install stripe --save</pre>
+</div>

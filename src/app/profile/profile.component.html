@@ -1,0 +1,59 @@
+<div class="center">
+  <div class="background">
+    <img class="image" src="assets/hero.svg">
+
+    <mat-card class="bio">
+      <img src="{{profile.avatar_url}}" class="avatar">
+      
+      <mat-card-header>
+        <mat-card-title>{{profile.login}}</mat-card-title>
+        <mat-card-subtitle>{{profile.bio}}</mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-list>
+        <mat-list-item *ngIf="">Lives in {{profile.location}}</mat-list-item>
+        <mat-list-item *ngIf="">Contact to {{profile.email}}</mat-list-item>
+        <mat-list-item *ngIf="">Works at {{profile.company}}</mat-list-item>
+      </mat-list>
+
+      <mat-divider></mat-divider>
+
+      <h3>Github member Since: <strong>{{profile.created_at | date}}</strong></h3>
+
+      <mat-card-content>
+        <mat-icon>code</mat-icon>
+      </mat-card-content>
+
+      <mat-chip-list>
+        <mat-chip color="primary" selected>{{profile.public_repos}} Public Repos</mat-chip>
+        <mat-chip color="accent" selected>{{profile.public_gist}} Public Gist</mat-chip>
+        <mat-chip color="accent" selected>{{profile.followers}} Followers</mat-chip>
+        <mat-chip color="accent" selected>{{profile.following}} Following</mat-chip>
+      </mat-chip-list>
+
+    </mat-card>
+
+  </div>
+
+  <h1>Projects</h1>
+  <div class="grid">
+    <mat-card class="grid-item-anim" *ngFor="let repo of repos">
+      <mat-card-header>
+        <div mat-card-avatar></div>
+        <mat-card-title>{{repo.name}}</mat-card-title>
+        <mat-card-subtitle><mat-chip-list>
+          <mat-chip selected>{{repo.watchers}} Stars </mat-chip>
+          <mat-chip selected>{{repo.forks}} Forks </mat-chip>
+        </mat-chip-list></mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="https://raw.githubusercontent.com/davidmimay/{{repo.name}}/master/src/assets/social-preview.png">
+      <mat-card-content>
+        <p>{{repo.description}}</p>
+      </mat-card-content>
+      <mat-card-actions class="center">
+        <a mat-raised-button color="accent" href="{{repo.html_url}}" target="_blank">view on github</a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+</div>
