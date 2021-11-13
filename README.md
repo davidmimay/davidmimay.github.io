@@ -13,9 +13,9 @@ davidmimay is an Angular PWA powered by Github.
 - Angular Material + Theme
 - Github pages and API 
 
-## Usage
+## Installation
 
-- [Installation guide dev.to](https://dev.to/davidmimay/angular-app-in-github-pages-86n-temp-slug-8163586)
+- [Read at dev.to](https://dev.to/davidmimay/angular-app-in-github-pages-86n-temp-slug-8163586)
 
 ## Best practices
 
