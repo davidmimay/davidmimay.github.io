@@ -48,7 +48,7 @@
       </mat-card-header>
       <img mat-card-image src="https://raw.githubusercontent.com/davidmimay/{{repo.name}}/master/src/assets/social-preview.png">
       <mat-card-content>
-        <p>{{repo.name | titlecase}} is a {{repo.description}} web app writed primarly on {{repo.language}} with a size of {{repo.size}}KB and uses the following technologies:</p>
+        <p>{{repo.name | titlecase}} is a {{repo.description}} web app writed primarly on {{repo.language}} with a size of {{repo.size / 1000 | number:'1.2-2'}}MB and uses the following technologies:</p>
         <mat-chip-list>
           <mat-chip *ngFor="let topic of repo.topics">{{ topic }}</mat-chip>
         </mat-chip-list>
