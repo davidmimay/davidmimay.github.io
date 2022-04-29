@@ -36,6 +36,7 @@
   </div>
 
   <h1>Projects</h1>
+  <h4>living a life with purpose, I hope to generate a good impact in the world</h4>
   <div class="grid">
     <mat-card class="grid-item-anim" *ngFor="let repo of repos">
       <mat-card-header>
@@ -54,7 +55,9 @@
         </mat-chip-list>
       </mat-card-content>
       <mat-card-actions class="center">
-        <a mat-raised-button color="accent" href="{{repo.html_url}}" target="_blank">view on github</a>
+        <a mat-raised-button color="accent" href="{{repo.homepage}}" target="_blank"><mat-icon>app_shortcut</mat-icon> app</a>
+        <a mat-raised-button color="accent" [href]="'https://' + repo.name + '.etsy.com'" target="_blank"><mat-icon>local_mall</mat-icon> shop</a>
+        <a mat-raised-button color="" href="{{repo.html_url}}" target="_blank"><mat-icon>terminal</mat-icon> code</a>
       </mat-card-actions>
     </mat-card>
   </div>

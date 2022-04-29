@@ -44,3 +44,11 @@ davidmimay is an Angular PWA powered by Github.
 * Import aliases - Shortened aliases for Core, Features, and Shared modules.
 * The Async Pipe - I've used the Async Pipe in the templates. This is because it automatically subscribes, and unsubscribes from observables. This is so you don't have to manually write all the OnDestroy code to unsubscribe!
 * Place all global styles into /src/styles. Update your angular.json file to add a stylePreprocessorOptions option. This allows you to do short import statements, like: @import "variables";
+
+# 💻 Developing
+
+🟠 add "my latest youtube video" through API
+🟠 add "my last tweet"
+🟠 add "my last posts" from blogger/davidmimay through API
+🟠 add "my last instagram photo" through API
+🟠 buymeacoffee button integration
