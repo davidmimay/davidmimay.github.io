@@ -11,11 +11,12 @@
       </mat-card-header>
 
       <mat-list>
-        <mat-list-item *ngIf="">Lives in {{profile.location}}</mat-list-item>
-        <mat-list-item *ngIf="">Contact to {{profile.email}}</mat-list-item>
-        <mat-list-item *ngIf="">Works at {{profile.company}}</mat-list-item>
+        <mat-list-item>📍 {{profile.location}}</mat-list-item>
+        <mat-list-item>💻 {{profile.company}}</mat-list-item>
+        <!-- <mat-list-item>📧 {{profile.email}}</mat-list-item> -->
       </mat-list>
-
+      <a mat-raised-button color="accent" [href]="'https://twitter.com/' + profile.twitter_username" target="_blank">🐦 message me</a>
+      
       <mat-divider></mat-divider>
 
       <h3>Github member Since: <strong>{{profile.created_at | date}}</strong></h3>
