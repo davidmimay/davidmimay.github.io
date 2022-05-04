@@ -15,7 +15,11 @@
         <mat-list-item>💻 {{profile.company}}</mat-list-item>
         <!-- <mat-list-item>📧 {{profile.email}}</mat-list-item> -->
       </mat-list>
-      <a mat-raised-button color="accent" [href]="'https://twitter.com/' + profile.twitter_username" target="_blank">🐦 message me</a>
+      <mat-card-actions>
+        <a mat-raised-button color="accent" href="https://medium.com/@davidmimay" target="_blank">📝 read </a>
+        <a mat-raised-button color="accent" [href]="'https://twitter.com/' + profile.twitter_username" target="_blank">🐦 chat</a>
+        <a mat-raised-button color="accent" href="https://stadia.com/profile/5585942212371840085" target="_blank">🕹 game</a>  
+      </mat-card-actions>
       
       <mat-divider></mat-divider>
 
